@@ -1,6 +1,6 @@
 {
   "name": "zkflow-task-assets",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Assets task in ZKflow format",
   "main": "src/assetsTask.js",
   "repository": {
