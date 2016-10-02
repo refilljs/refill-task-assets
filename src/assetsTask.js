@@ -3,22 +3,23 @@
 var imagemin = require('gulp-imagemin');
 var changed = require('gulp-changed');
 var gulpif = require('gulp-if');
-var zkutils = require('gulp-zkflow-utils');
-var zkflowWatcher = require('zkflow-watcher');
-var ZkflowNextHandler = require('zkflow-next-handler');
+var refillWatcher = require('refill-watcher');
+var refillLogger = require('refill-logger');
+var refillPromisifyStream = require('refill-promisify-stream');
+var RefillNextHandler = require('refill-next-handler');
 
 function getAssetsTask(options, gulp, mode, getOutputDir) {
 
   function assetsTask(next) {
 
-    var logger = zkutils.logger('assets');
+    var logger = refillLogger('assets');
     var outputDir = getOutputDir();
     var zkflowNextHandler;
 
     function runAssets() {
 
       return zkflowNextHandler.handle(
-        zkutils.promisify(
+        refillPromisifyStream(
           gulp
           .src(options.globs, options.globsOptions)
           .pipe(changed(outputDir))
@@ -29,13 +30,13 @@ function getAssetsTask(options, gulp, mode, getOutputDir) {
 
     }
 
-    zkflowNextHandler = new ZkflowNextHandler({
+    zkflowNextHandler = new RefillNextHandler({
       next: next,
       watch: mode.watch,
       logger: logger
     });
 
-    zkflowWatcher.watch(runAssets, mode.watch, options.globs, logger);
+    refillWatcher.watch(runAssets, mode.watch, options.globs, logger);
 
   }
 

@@ -25,17 +25,19 @@
   },
   "devDependencies": {
     "gulp": "3.9.1",
-    "zkflow-node": "1.0.0"
+    "refill-node": "^2.0.0"
   },
   "peerDependencies": {
     "gulp": "^3",
-    "zkflow": "^1"
+    "refill": "^1"
   },
   "dependencies": {
-    "gulp-changed": "1.3.0",
-    "gulp-if": "2.0.0",
-    "gulp-imagemin": "2.4.0",
-    "gulp-zkflow-utils": "0.5.0",
-    "zkflow-next-handler": "1.0.0"
+    "gulp-changed": "1.3.2",
+    "gulp-if": "2.0.1",
+    "gulp-imagemin": "3.0.3",
+    "refill-logger": "^1.0.3",
+    "refill-next-handler": "^1.1.1",
+    "refill-promisify-stream": "^1.0.1",
+    "refill-watcher": "^1.0.1"
   }
 }
