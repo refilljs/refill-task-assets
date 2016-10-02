@@ -1,24 +1,24 @@
 {
-  "name": "zkflow-task-assets",
+  "name": "refill-task-assets",
   "version": "1.0.0",
-  "description": "Assets task in ZKflow format",
+  "description": "Assets task in Refill format",
   "main": "src/assetsTask.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zaklinaczekodu/zkflow-task-assets.git"
+    "url": "https://github.com/refilljs/refill-task-assets.git"
   },
   "keywords": [
     "gulp",
-    "zkflow",
+    "refill",
     "task",
     "assets"
   ],
   "author": "Piotr Baranowski <piotr.baranowski@zaklinaczekodu.com> (https://github.com/zaklinaczekodu)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zaklinaczekodu/zkflow-task-assets/issues"
+    "url": "https://github.com/refilljs/refill-task-assets/issues"
   },
-  "homepage": "https://github.com/zaklinaczekodu/zkflow-task-assets",
+  "homepage": "https://github.com/refilljs/refill-task-assets",
   "engines": {
     "node": ">=4.2",
     "npm": ">=3.3.3"
