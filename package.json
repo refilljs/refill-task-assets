@@ -1,41 +1,43 @@
 {
-  "name": "zkflow-task-assets",
+  "name": "refill-task-assets",
   "version": "1.0.0",
-  "description": "Assets task in ZKflow format",
+  "description": "Assets task in Refill format",
   "main": "src/assetsTask.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zaklinaczekodu/zkflow-task-assets.git"
+    "url": "https://github.com/refilljs/refill-task-assets.git"
   },
   "keywords": [
     "gulp",
-    "zkflow",
+    "refill",
     "task",
     "assets"
   ],
   "author": "Piotr Baranowski <piotr.baranowski@zaklinaczekodu.com> (https://github.com/zaklinaczekodu)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zaklinaczekodu/zkflow-task-assets/issues"
+    "url": "https://github.com/refilljs/refill-task-assets/issues"
   },
-  "homepage": "https://github.com/zaklinaczekodu/zkflow-task-assets",
+  "homepage": "https://github.com/refilljs/refill-task-assets",
   "engines": {
     "node": ">=4.2",
     "npm": ">=3.3.3"
   },
   "devDependencies": {
     "gulp": "3.9.1",
-    "zkflow-node": "1.0.0"
+    "refill-node": "^2.0.0"
   },
   "peerDependencies": {
     "gulp": "^3",
-    "zkflow": "^1"
+    "refill": "^1"
   },
   "dependencies": {
-    "gulp-changed": "1.3.0",
-    "gulp-if": "2.0.0",
-    "gulp-imagemin": "2.4.0",
-    "gulp-zkflow-utils": "0.5.0",
-    "zkflow-next-handler": "1.0.0"
+    "gulp-changed": "1.3.2",
+    "gulp-if": "2.0.1",
+    "gulp-imagemin": "3.0.3",
+    "refill-logger": "^1.0.3",
+    "refill-next-handler": "^1.1.1",
+    "refill-promisify-stream": "^1.0.1",
+    "refill-watcher": "^1.0.1"
   }
 }
